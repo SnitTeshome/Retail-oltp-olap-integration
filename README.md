@@ -77,16 +77,31 @@ Optimized for fast and efficient analytics using denormalized structures.
 
 Extracts data from `transactions`, joins it with `products` and `dim_date`, computes revenue, and inserts into `fact_sales`.
 
-## Repository Structure
-
-OLTP-OLAP-Retail-Warehouse/
-├── oltp_schema/           # SQL scripts to build OLTP system
-├── olap_schema/           # SQL scripts for data warehouse (star schema)
-├── etl_scripts/           # ETL logic from OLTP to OLAP
-├── sample_data/           # Optional: CSV files to seed OLTP
-├── queries/               # SQL files for OLAP analysis
-├── README.md              # Project documentation
-├── LICENSE                # License information
+## Repository-Folder Structure
+├── etl_scripts/
+│   ├── populate_dimensions.sql   # Table creation script (star schema)
+│   └── Sample_data/              # Folder containing CSV files:Dimension
+│       ├── view_dim_date.csv     
+│       ├── view_dim_products.csv   
+│       └── view_dim_stores.csv
+│
+│
+├── Sample_data/                  ##Folder containing simulated data
+│   ├── view_customers.csv        
+│   ├── view_products.csv      
+│   ├── view_stores.csv
+│   └── view_transaction.csv
+│
+│
+├── insert_customers.sql          # SQL commands to bulk insert CSVs into tables
+├── insert_products.sql             
+├── insert_stores.sql             
+├── insert_transactions.sql
+├── License                       # Open source license
+├── olap_schema.sql               # sql scripts to build olap system
+├── Oltp_schema.sql               # Sql scripts to build OLTP System
+├── README.md                     # Project documentation
+└── Reflection Question.md        # Markdown file on reflections
 
 ##  Collaborators
 
