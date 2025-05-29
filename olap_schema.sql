@@ -7,7 +7,7 @@ CREATE TABLE dim_date (
     month INT NOT NULL,
     year INT NOT NULL
 );
-
+ 
 
 -- dim_product
 CREATE TABLE dim_product (
