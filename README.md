@@ -1,9 +1,8 @@
-# DSA 2040A US 2025 LAB 2  
+## DSA 2040A US 2025 LAB 2  
 **EXTENDED LAB MANUAL: OLTP + OLAP Integration**
-
 ---
 
-##  Table of Contents
+##  *Table of Contents*
 
 - [Overview](#overview)  
 - [Project Objective](#project-objective)  
@@ -33,13 +32,13 @@ This lab project simulates a real-world retail system by integrating **OLTP (Onl
 - Perform ETL (Extract, Transform, Load) from OLTP → OLAP.
 - Run analytical SQL queries to extract business insights.
 
-## Tools & Technologies
+## *Tools & Technologies*
 
-- **Database:** PostgreSQL / SQL Server  
-- **Editors:** Visual Studio Code  
-- **Client:** pgAdmin / SQL Server Management Studio (SSMS)  
-- **Data Format:** SQL & CSV files  
-- **Version Control:** Git & GitHub  
+- **Database**: Microsoft SQL Server  
+- **Editor**: Visual Studio Code (with SQL extension)  
+- **SQL Client**: SQL Server Management Studio (SSMS)  
+- **Version Control**: Git and GitHub  
+- **Data Format**: CSV files    
 
 ##  How to Use
 
@@ -71,34 +70,45 @@ Captures normalized, day-to-day business transactions.
 Optimized for fast and efficient analytics using denormalized structures.
 
 #### `dim_product`, `dim_store`, `dim_date`
-> These are assumed to be pre-created as part of the lab instructions, with dimension keys and business attributes.
+> These are assumed to be populated as part of the lab instructions, with dimension keys and business attributes.
 
 ##  ETL Process
 
 Extracts data from `transactions`, joins it with `products` and `dim_date`, computes revenue, and inserts into `fact_sales`.
 
 ## Repository-Folder Structure
-
+<pre> 
+├── Sample_data/                          # Folder with simulated OLTP data
+│   ├── view_customers.csv
+│   ├── view_products.csv
+│   ├── view_stores.csv
+│   └── view_transaction.csv
+├── Oltp_schema.sql                       # SQL script to build OLTP system
+│
+│   ├── insert_customers.sql              # SQL to insert customer data
+│   ├── insert_products.sql
+│   ├── insert_stores.sql
+│   └── insert_transactions.sql
+├── olap_schema.sql                       # SQL script to build OLAP system 
+│
 ├── etl_scripts/
 │   ├── populate_dimensions.sql           # SQL to create and populate dimension tables
 │   ├── Sample_data/                      # Folder containing dimension CSVs
 │   │   ├── view_dim_date.csv
 │   │   ├── view_dim_products.csv
 │   │   └── view_dim_stores.csv
+├──  quieries            # SQL source files folder
+│   ├── monthly_sales_trends.sql      # SQL query for analyzing monthly sales trends
+│   ├── top_selling_products.sql      # SQL query for top selling products
 │
-│   ├── insert_customers.sql              # SQL to insert customer data
-│   ├── insert_products.sql
-│   ├── insert_stores.sql
-│   └── insert_transactions.sql
+├── output_queries/          # Folder for output query results or exports (e.g., CSV, reports)
 │
-├── Sample_data/                          # Folder with simulated OLTP data
-│   ├── view_customers.csv
-│   ├── view_products.csv
-│   ├── view_stores.csv
-│   └── view_transaction.csv
+├── insights/               # Folder for markdown files with analysis or insights
+│   └── insights.md            # Written insights and notes based on query results
 │
-├── olap_schema.sql                       # SQL script to build OLAP system (e.g., star schema)
-├── Oltp_schema.sql                       # SQL script to build OLTP system
+├── schema.sql              # Main schema creation script (tables, keys, constraints)
+│
+└── README.md               # Overview of repo, schema, queries, and instructio
 ├── LICENSE                               # Open source license
 ├── README.md                             # Project documentation
 └── Reflection Question.md                # Reflections and discussion
