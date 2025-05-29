@@ -1,5 +1,5 @@
+--Insert multiple records into the 'transactions' table
 INSERT INTO transactions (customer_id, product_id, store_id, quantity, transaction_date) VALUES
-
 (1, 1, 1, 1, '2025-05-01'),
 (2, 2, 2, 2, '2025-05-02'),
 (3, 3, 3, 1, '2025-05-03'),
@@ -15,5 +15,3 @@ INSERT INTO transactions (customer_id, product_id, store_id, quantity, transacti
 (1, 3, 1, 1, '2025-03-03'),
 (2, 5, 2, 1, '2025-03-04'),
 (3, 4, 3, 1, '2025-03-05');
-
-SELECT * FROM transactions;
