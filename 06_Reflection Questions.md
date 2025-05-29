@@ -1,32 +1,29 @@
-**1. Why is the OLTP system normalized and the OLAP system denormalized?**
-
-OLTP (Online Transaction Processing) systems are **normalized** to:
-- Reduce data redundancy.
-- Ensure data integrity.
-- Support efficient insert, update, and delete operations.
-
-OLAP (Online Analytical Processing) systems are **denormalized** to:
-- Improve query performance.
-- Reduce the number of joins in complex analytical queries.
-- Enable fast aggregation and reporting.
+# **_Reflection Questions and Answers_**
 
 ---
 
-**2. What challenges would you face if you ran analytical queries directly on the OLTP system?**
+### **_1. Why is the OLTP system normalized and the OLAP system denormalized?_**
 
-Running analytical queries on an OLTP system can lead to several issues:
-- Performance degradation for transactional operations.
-- Locking and blocking issues, affecting user experience.
-- Resource contention between transactional and analytical workloads.
-- Incomplete or inconsistent data if analytics run during ongoing transactions.
-- Scalability limitations for complex, long-running queries.
+OLTP systems are normalized to reduce data redundancy and ensure data integrity during transactional operations. This structure supports fast, accurate inserts, updates, and deletes by organizing data into multiple related tables.
 
-### 3. How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?
+OLAP systems, on the other hand, are denormalized to simplify complex queries and enhance read performance for analytical processing. Denormalization reduces the number of joins required when querying large datasets, which improves speed and supports efficient reporting and analysis.
 
-Automation in data pipelines plays a crucial role in ensuring efficiency and reliability. Specifically, it:
+---
 
-- Ensures timely and consistent data movement from source systems to data warehouses.  
-- Reduces manual effort and human error.  
-- Enables data transformation and cleaning at scale.  
-- Supports regular updates for dashboards and reports.  
-- Helps maintain data freshness and reliability for decision-making.
+### **_2. What challenges would you face if you ran analytical queries directly on the OLTP system?_**
+
+Running analytical queries on an OLTP system presents several challenges:
+
+- OLTP databases are optimized for fast, small transactions—not complex, long-running queries—so performance could suffer.
+- Analytical queries may cause locking and blocking, which can interrupt or slow down operational tasks.
+- OLTP systems typically lack historical and aggregated data, which limits the ability to perform trend or comparative analysis.
+
+---
+
+### **_3. How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?_**
+
+Automation through scheduled ETL (Extract, Transform, Load) jobs offers several advantages:
+
+- It ensures data is updated regularly and reliably without manual effort, minimizing errors and reducing workload.
+- It enables timely access to fresh, consistent data for reporting and analysis, which supports informed decision-making.
+- Automated pipelines are scalable and consistent, making it easier to handle increasing data volumes and complex transformation tasks.
