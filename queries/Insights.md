@@ -1,5 +1,5 @@
 ## *Queries_Output*
-## 1 *Monthly Sales Revenue Analysis*
+## 1  *Monthly Sales Revenue Analysis*
 
 ## Query Output
 
