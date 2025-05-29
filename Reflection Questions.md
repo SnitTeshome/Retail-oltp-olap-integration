@@ -20,3 +20,13 @@ Running analytical queries on an OLTP system can lead to several issues:
 - Resource contention between transactional and analytical workloads.
 - Incomplete or inconsistent data if analytics run during ongoing transactions.
 - Scalability limitations for complex, long-running queries.
+
+### 3. How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?
+
+Automation in data pipelines plays a crucial role in ensuring efficiency and reliability. Specifically, it:
+
+- Ensures timely and consistent data movement from source systems to data warehouses.  
+- Reduces manual effort and human error.  
+- Enables data transformation and cleaning at scale.  
+- Supports regular updates for dashboards and reports.  
+- Helps maintain data freshness and reliability for decision-making.
