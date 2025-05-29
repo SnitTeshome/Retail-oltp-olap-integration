@@ -1,4 +1,4 @@
-
+use olap_schema;
 -- dim_date
 CREATE TABLE dim_date (
     date_id INT IDENTITY(1,1) PRIMARY KEY,
