@@ -1,3 +1,4 @@
+use oltp_schema;
 -- Customers Table
 CREATE TABLE customers (
     customer_id INT IDENTITY(1,1) PRIMARY KEY,

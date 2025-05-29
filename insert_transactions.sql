@@ -16,4 +16,4 @@ INSERT INTO transactions (customer_id, product_id, store_id, quantity, transacti
 (2, 5, 2, 1, '2025-03-04'),
 (3, 4, 3, 1, '2025-03-05');
 
-SELECT * FROM�transactions;
+SELECT * FROM transactions;

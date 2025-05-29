@@ -1,4 +1,4 @@
--- Inserting 8 commonly used products
+-- Inserting  products records
 INSERT INTO products (name, category, price) VALUES
 ('Wireless Mouse', 'Electronics', 25.99),
 ('Yoga Mat', 'Fitness', 18.50),
@@ -8,6 +8,3 @@ INSERT INTO products (name, category, price) VALUES
 ('Backpack', 'Accessories', 49.99),
 ('Water Bottle', 'Fitness', 14.25),
 ('Cotton T-Shirt', 'Apparel', 19.99);
-
--- Viewing all products records
-SELECT * FROM products;

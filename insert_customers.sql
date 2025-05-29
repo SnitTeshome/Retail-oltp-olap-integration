@@ -1,4 +1,4 @@
--- Step 4: Insert new customer records
+-- Insert customer records
 INSERT INTO customers (name, email, registered_date) VALUES
 ('Maria Johnson', 'maria.johnson@example.com', '2024-11-15'),
 ('James Lee', 'james.lee@example.com', '2024-12-02'),
@@ -15,6 +15,4 @@ INSERT INTO customers (name, email, registered_date) VALUES
 ('Mia Hernandez', 'mia.hernandez@example.com', '2024-11-29'),
 ('Jameson Clark', 'jameson.clark@example.com', '2025-02-20'),
 ('Amelia Lewis', 'amelia.lewis@example.com', '2025-03-25');
-
-SELECT * FROM customers;
 
