@@ -83,32 +83,29 @@ Extracts data from `transactions`, joins it with `products` and `dim_date`, comp
 │   ├── view_products.csv
 │   ├── view_stores.csv
 │   └── view_transaction.csv
-├── Oltp_schema.sql                       # SQL script to build OLTP system
-│
-│   ├── insert_customers.sql              # SQL to insert customer data
+|
+├── oltp_schema.sql                     
+├── insert_scripts/                   
+│   ├── insert_customers.sql            
 │   ├── insert_products.sql
 │   ├── insert_stores.sql
 │   └── insert_transactions.sql
-├── olap_schema.sql                       # SQL script to build OLAP system 
-│
-├── etl_scripts/
-│   ├── populate_dimensions.sql           # SQL to create and populate dimension tables
-│   ├── Sample_data/                      # Folder containing dimension CSVs
+├── olap_schema.sql                      # SQL script to build OLAP system
+├── etl_scripts/                      
+│   ├── populate_dimensions.sql         
+│   ├── Sample_data/                     
 │   │   ├── view_dim_date.csv
 │   │   ├── view_dim_products.csv
 │   │   └── view_dim_stores.csv
-├──  quieries            # SQL source files folder
-│   ├── monthly_sales_trends.sql      # SQL query for analyzing monthly sales trends
-│   ├── top_selling_products.sql      # SQL query for top selling products
-│
-├── output_queries/          # Folder for output query results or exports 
-│
-├── insights/               # Folder for markdown files with analysis or insights
-│   └── insights.md            # Written insights and notes based on query results
-├──Reflection Question.md                # Reflections and discussion
-
-├── README.md                             # Project documentation
-└── LICENSE                               # Open source license
+├── queries/                           
+│   ├── monthly_sales_trends.sql        
+│   ├── top_selling_products.sql        
+├── output_queries/                     # Folder for output query results or exports
+├── insights/                          # Markdown files with analysis or insights
+│   └── insights.md                      # Written insights based on query results
+├── Reflection_Question.md             # Reflection and discussion document
+├── README.md                        
+└── LICENSE                         
  </pre>
 
 ##  Collaborators
