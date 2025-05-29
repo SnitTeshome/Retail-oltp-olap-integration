@@ -138,4 +138,5 @@ Extracts data from `transactions`, joins it with `products` and `dim_date`, comp
 
 ##  _**License**_
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file.
+
