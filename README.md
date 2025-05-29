@@ -101,17 +101,15 @@ Extracts data from `transactions`, joins it with `products` and `dim_date`, comp
 │   ├── monthly_sales_trends.sql      # SQL query for analyzing monthly sales trends
 │   ├── top_selling_products.sql      # SQL query for top selling products
 │
-├── output_queries/          # Folder for output query results or exports (e.g., CSV, reports)
+├── output_queries/          # Folder for output query results or exports 
 │
 ├── insights/               # Folder for markdown files with analysis or insights
 │   └── insights.md            # Written insights and notes based on query results
-│
-├── schema.sql              # Main schema creation script (tables, keys, constraints)
-│
-└── README.md               # Overview of repo, schema, queries, and instructio
-├── LICENSE                               # Open source license
+├──Reflection Question.md                # Reflections and discussion
+
 ├── README.md                             # Project documentation
-└── Reflection Question.md                # Reflections and discussion
+└── LICENSE                               # Open source license
+ </pre>
 
 ##  Collaborators
 
