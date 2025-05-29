@@ -125,17 +125,8 @@ Extracts data from `transactions`, joins it with `products` and `dim_date`, comp
 ##  Reflection & Discussion
 
 1. **Why is the OLTP system normalized and the OLAP system denormalized?**  
-   - OLTP is normalized to minimize redundancy and maintain data integrity during frequent updates.
-   - OLAP is denormalized for faster read/query performance during analytics.
-
 2. **What challenges would you face if you ran analytical queries directly on the OLTP system?**  
-   - It can slow down real-time operations.
-   - Complex joins in normalized data make it inefficient for reporting.
-
 3. **How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?**  
-   - Ensures timely data updates in the warehouse.
-   - Reduces manual effort and risk of error.
-
 ---
 
 ##  Repository URL
