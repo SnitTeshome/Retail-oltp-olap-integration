@@ -78,30 +78,30 @@ Optimized for fast and efficient analytics using denormalized structures.
 Extracts data from `transactions`, joins it with `products` and `dim_date`, computes revenue, and inserts into `fact_sales`.
 
 ## Repository-Folder Structure
+
 ├── etl_scripts/
-│   ├── populate_dimensions.sql   # Table creation script (star schema)
-│   └── Sample_data/              # Folder containing CSV files:Dimension
-│       ├── view_dim_date.csv     
-│       ├── view_dim_products.csv   
-│       └── view_dim_stores.csv
+│   ├── populate_dimensions.sql           # SQL to create and populate dimension tables
+│   ├── Sample_data/                      # Folder containing dimension CSVs
+│   │   ├── view_dim_date.csv
+│   │   ├── view_dim_products.csv
+│   │   └── view_dim_stores.csv
 │
+│   ├── insert_customers.sql              # SQL to insert customer data
+│   ├── insert_products.sql
+│   ├── insert_stores.sql
+│   └── insert_transactions.sql
 │
-├── Sample_data/                  ##Folder containing simulated data
-│   ├── view_customers.csv        
-│   ├── view_products.csv      
+├── Sample_data/                          # Folder with simulated OLTP data
+│   ├── view_customers.csv
+│   ├── view_products.csv
 │   ├── view_stores.csv
 │   └── view_transaction.csv
 │
-│
-├── insert_customers.sql          # SQL commands to bulk insert CSVs into tables
-├── insert_products.sql             
-├── insert_stores.sql             
-├── insert_transactions.sql
-├── License                       # Open source license
-├── olap_schema.sql               # sql scripts to build olap system
-├── Oltp_schema.sql               # Sql scripts to build OLTP System
-├── README.md                     # Project documentation
-└── Reflection Question.md        # Markdown file on reflections
+├── olap_schema.sql                       # SQL script to build OLAP system (e.g., star schema)
+├── Oltp_schema.sql                       # SQL script to build OLTP system
+├── LICENSE                               # Open source license
+├── README.md                             # Project documentation
+└── Reflection Question.md                # Reflections and discussion
 
 ##  Collaborators
 
