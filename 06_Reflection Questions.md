@@ -14,7 +14,7 @@ OLAP systems, on the other hand, are denormalized to simplify complex queries an
 
 Running analytical queries on an OLTP system presents several challenges:
 
-- OLTP databases are optimized for fast, small transactions—not complex, long-running queries—so performance could suffer.
+- OLTP databases are optimized for fast, small transactions—not complex, long-running queries— could cause slowdowns.
 - Analytical queries may cause locking and blocking, which can interrupt or slow down operational tasks.
 - OLTP systems typically lack historical and aggregated data, which limits the ability to perform trend or comparative analysis.
 
@@ -24,6 +24,6 @@ Running analytical queries on an OLTP system presents several challenges:
 
 Automation through scheduled ETL (Extract, Transform, Load) jobs offers several advantages:
 
-- It ensures data is updated regularly and reliably without manual effort, minimizing errors and reducing workload.
+- It  ensures data is regularly and reliably updated without manual intervention, reducing errors and operational overhead.
 - It enables timely access to fresh, consistent data for reporting and analysis, which supports informed decision-making.
 - Automated pipelines are scalable and consistent, making it easier to handle increasing data volumes and complex transformation tasks.
