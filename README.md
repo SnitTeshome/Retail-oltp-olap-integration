@@ -77,7 +77,17 @@ Optimized for fast and efficient analytics using denormalized structures.
 
 Extracts data from `transactions`, joins it with `products` and `dim_date`, computes revenue, and inserts into `fact_sales`.
 
-<pre> <code> ## Repository Structure OLTP-OLAP-Retail-Warehouse/ ├── oltp_schema/ # SQL scripts to build OLTP system ├── olap_schema/ # SQL scripts for data warehouse (star schema) ├── etl_scripts/ # ETL logic from OLTP to OLAP ├── sample_data/ # Optional: CSV files to seed OLTP ├── queries/ # SQL files for OLAP analysis ├── README.md # Project documentation ├── LICENSE # License information </code> </pre>
+## Repository Structure
+
+OLTP-OLAP-Retail-Warehouse/
+├── oltp_schema/           # SQL scripts to build OLTP system
+├── olap_schema/           # SQL scripts for data warehouse (star schema)
+├── etl_scripts/           # ETL logic from OLTP to OLAP
+├── sample_data/           # Optional: CSV files to seed OLTP
+├── queries/               # SQL files for OLAP analysis
+├── README.md              # Project documentation
+├── LICENSE                # License information
+
 ##  Collaborators
 
 **Group 8 – DSA2040A (Lab Two)**  
