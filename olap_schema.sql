@@ -8,6 +8,7 @@ CREATE TABLE dim_date (
     year INT NOT NULL
 );
 
+
 -- dim_product
 CREATE TABLE dim_product (
     product_id INT PRIMARY KEY,
