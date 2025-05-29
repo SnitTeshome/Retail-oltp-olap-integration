@@ -1,8 +1,8 @@
-## DSA 2040A US 2025 LAB 2  
+## _**DSA 2040A US 2025 LAB 2**_  
 **EXTENDED LAB MANUAL: OLTP + OLAP Integration**
 ---
 
-##  *Table of Contents*
+##  _*Table of Contents*_
 
 - [Overview](#overview)  
 - [Project Objective](#project-objective)  
@@ -21,69 +21,70 @@
 
 ---
 
-##  Overview
+##  _**Overview**_
 
 This lab project simulates a real-world retail system by integrating **OLTP (Online Transaction Processing)** and **OLAP (Online Analytical Processing)** systems. Students design and implement an operational OLTP schema, transform the data through ETL, and load it into an OLAP star schema for business analysis.
 
-##  Project Objective
+##  _**Project Objective**_
 
-- Design and build an OLTP database for transaction-level operations.
-- Build an OLAP data warehouse using a star schema model.
-- Perform ETL (Extract, Transform, Load) from OLTP → OLAP.
+- Design and build an OLTP database for transaction-level operations.  
+- Build an OLAP data warehouse using a star schema model.  
+- Perform ETL (Extract, Transform, Load) from OLTP → OLAP.  
 - Run analytical SQL queries to extract business insights.
 
-## *Tools & Technologies*
+## _**Tools & Technologies**_
 
-- **Database**: Microsoft SQL Server  
-- **Editor**: Visual Studio Code (with SQL extension)  
-- **SQL Client**: SQL Server Management Studio (SSMS)  
-- **Version Control**: Git and GitHub  
-- **Data Format**: CSV files    
+- **Database:** Microsoft SQL Server  
+- **Editor:** Visual Studio Code (with SQL extension)  
+- **SQL Client:** SQL Server Management Studio (SSMS)  
+- **Version Control:** Git and GitHub  
+- **Data Format:** CSV files    
 
-##  How to Use
+##  _**How to Use**_
 
-1. **Set Up OLTP Schema:**
+1. **Set Up OLTP Schema:**  
    - Run all SQL files under `/oltp_schema/` to create `customers`, `products`, `stores`, and `transactions` tables.
 
-2. **Insert Sample Data:**
+2. **Insert Sample Data:**  
    - Use the scripts provided or load optional CSV files from `/sample_data/`.
 
-3. **Build OLAP Schema:**
+3. **Build OLAP Schema:**  
    - Run scripts in `/olap_schema/` to create `fact_sales`, `dim_product`, `dim_store`, and `dim_date`.
 
-4. **Perform ETL:**
+4. **Perform ETL:**  
    - Execute ETL scripts in `/etl_scripts/` to load transactional data into the data warehouse.
 
-5. **Run Analytical Queries:**
+5. **Run Analytical Queries:**  
    - Use queries from `/queries/` to gain business insights (e.g., monthly trends, top-selling products).
 
 ---
 
-##  Schemas Overview
+##  _**Schemas Overview**_
 
-### OLTP Schema
+### _**OLTP Schema**_
 
 Captures normalized, day-to-day business transactions.
 
-###  OLAP Star Schema
+###  _**OLAP Star Schema**_
 
 Optimized for fast and efficient analytics using denormalized structures.
 
 #### `dim_product`, `dim_store`, `dim_date`
+
 > These are assumed to be populated as part of the lab instructions, with dimension keys and business attributes.
 
-##  ETL Process
+##  _**ETL Process**_
 
 Extracts data from `transactions`, joins it with `products` and `dim_date`, computes revenue, and inserts into `fact_sales`.
 
-## Repository-Folder Structure
+## _**Repository-Folder Structure**_
 <pre> 
 ├── Sample_data/                          # Folder with simulated OLTP data
 │   ├── view_customers.csv
 │   ├── view_products.csv
 │   ├── view_stores.csv
 │   └── view_transaction.csv
-|
+│
 ├── oltp_schema.sql                     
 ├── insert_scripts/                   
 │   ├── insert_customers.sql            
@@ -106,35 +107,35 @@ Extracts data from `transactions`, joins it with `products` and `dim_date`, comp
 ├── Reflection_Question.md             # Reflection and discussion document
 ├── README.md                        
 └── LICENSE                         
- </pre>
+</pre>
 
-##  Collaborators
+##  _**Collaborators**_
 
 **Group 8 – DSA2040A (Lab Two)**  
 
 | Name                        | Student ID | GitHub Username       |
 |-----------------------------|------------|------------------------|
 | Snit Teshome                | 670552     | [@SnitTeshome](https://github.com/SnitTeshome)  
-| Halima Mohammed             | 670315     | [@halima-04](https://github.com/halima-04)  
-| Julie Koki                  | 669996     | [@juli3333](https://github.com/juli3333)  
+| Halima Mohammed             | 670315     | [@halima-04](https://github.com/halima-04)   
 | Lesala Phillip Monaheng     | 669218     | [@Lesala](https://github.com/Lesala)  
 | Mohamed Mohamed             | 670006     | [@mohayo8](https://github.com/mohayo8)  
 
 ---
 
-##  Reflection & Discussion
+##  _**Reflection & Discussion**_
 
-1. **Why is the OLTP system normalized and the OLAP system denormalized?**  
-2. **What challenges would you face if you ran analytical queries directly on the OLTP system?**  
-3. **How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?**  
+1. Why is the OLTP system normalized and the OLAP system denormalized?  
+2. What challenges would you face if you ran analytical queries directly on the OLTP system?  
+3. How can automation (e.g., scheduled ETL jobs) help in a real-world data pipeline?  
+
 ---
 
-##  Repository URL
+##  _**Repository URL**_
 
 [https://github.com/SnitTeshome/Retail-oltp-olap-integration](https://github.com/SnitTeshome/Retail-oltp-olap-integration)
 
 ---
 
-##  License
+##  _**License**_
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
